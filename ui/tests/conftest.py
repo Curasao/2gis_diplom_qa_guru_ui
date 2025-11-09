@@ -32,6 +32,13 @@ def setup_browser_realty():
     with allure.step('tear down app session with id: ' + session_id):
         browser.quit()
 
+    with open("video.mp4", "rb") as video_file:
+        allure.attach(
+            video_file.read(),
+            name="video",  # Название вложения в отчёте
+            attachment_type=allure.attachment_type.MP4
+        )
+
     browser.quit()
 
 @pytest.fixture(scope='function')

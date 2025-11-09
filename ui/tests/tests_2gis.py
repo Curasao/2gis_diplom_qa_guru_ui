@@ -6,7 +6,7 @@ from ui.pages.test_2gis import FormPage
 
 @allure.feature("Фильтрация 2GIS")
 @allure.story("Поиск кофеен")
-@allure.step("Открыть страницу и выполнить поиск кофеен")
+@allure.title("Открыть страницу и выполнить поиск кофеен")
 def test_form_submission(setup_browser_filter):
         filter_page = FilterPage()
         filter_page.open()
@@ -15,12 +15,12 @@ def test_form_submission(setup_browser_filter):
         filter_page.rate_button()
         filter_page.price_button()
 
-@allure.step("Поиск недвижимости по городу")
+@allure.title("Поиск недвижимости по городу")
 def test_realty_search(setup_browser_realty):
     realty_page = Realty_Page()
     realty_page.realty_search("Тучково")
 
-@allure.step("Открыть недвижимость и выставить фильтр цены")
+@allure.title("Открыть недвижимость и выставить фильтр цены")
 def test_realty_filters_price_and_rooms(setup_browser_realty):
     realty_page = Realty_Page()
     realty_page.realty_open()
@@ -28,14 +28,14 @@ def test_realty_filters_price_and_rooms(setup_browser_realty):
 
 @allure.feature("Форма пользователя 2GIS")
 @allure.story("Проверка номера телефона")
-@allure.step("Вход с корректным номером")
+@allure.title("Вход с корректным номером")
 def test_valid_login(setup_browser_form):
 
     form_page = FormPage()
     form_page.form_open()
     form_page.form_telephone('+7965555555')
 
-@allure.step("Вход с некорректным номером")
+@allure.title("Вход с некорректным номером")
 def test_unvalid_login(setup_browser_form):
     form_page = FormPage()
     form_page.form_open()

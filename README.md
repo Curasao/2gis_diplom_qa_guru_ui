@@ -9,8 +9,8 @@
 - Проверка формы регистрации
 
 
-![diplom_ui.PNG](Results%20and%20reports/diplom_ui.PNG)
-![allure_test_UI.PNG](Results%20and%20reports/allure_test_UI.PNG)
+![diplom_ui.PNG](Results%20and%20reports/diplom_ui.PNG) ![allure_test_UI.PNG](Results%20and%20reports/allure_test_UI.PNG)
+
 Используемый стек:
 <p align="center">
   <img src="https://camo.githubusercontent.com/90220a7692675205d6140ce1112dd5bbf21ebbecf9e882e2c6438823611345a1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54656c656772616d2d426f742d626c75653f6c6f676f3d74656c656772616d266c6f676f436f6c6f723d7768697465" />

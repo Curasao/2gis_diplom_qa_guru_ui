@@ -4,6 +4,8 @@ from ui.pages.test_2gis import Realty_Page
 from ui.pages.test_2gis import FilterPage
 from ui.pages.test_2gis import FormPage
 
+@allure.feature("Фильтрация 2GIS")
+@allure.story("Поиск кофеен")
 @allure.step("Открыть страницу и выполнить поиск кофеен")
 def test_form_submission(setup_browser_filter):
         filter_page = FilterPage()
@@ -24,6 +26,8 @@ def test_realty_filters_price_and_rooms(setup_browser_realty):
     realty_page.realty_open()
     realty_page.realty_price_button(4000000, 800000)
 
+@allure.feature("Форма пользователя 2GIS")
+@allure.story("Проверка номера телефона")
 @allure.step("Вход с корректным номером")
 def test_valid_login(setup_browser_form):
 

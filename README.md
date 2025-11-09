@@ -9,8 +9,8 @@
 - Проверка формы регистрации
 
 
-![diplom_ui.PNG](Results%20and%20reports/diplom_ui.PNG) 
-![allure_test_UI.PNG](Results%20and%20reports/allure_test_UI.PNG)
+![diplom_ui.PNG](Reports/diplom_ui.PNG) 
+![allure_test_UI.PNG](Reports/allure_test_UI.PNG)
 
 Используемый стек:
 <p align="center">

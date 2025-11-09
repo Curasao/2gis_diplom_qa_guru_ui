@@ -1,4 +1,4 @@
-import inspect
+import allure
 import pytest
 from selene import browser
 
@@ -15,6 +15,22 @@ def setup_browser_realty():
     browser.config.type_by_js = False
     browser.config.hold_browser_open = False
     yield browser
+    allure.attach(
+        browser.driver.get_screenshot_as_png(),
+        name='screenshot',
+        attachment_type=allure.attachment_type.PNG,
+    )
+
+    allure.attach(
+        browser.driver.page_source,
+        name='screen xml dump',
+        attachment_type=allure.attachment_type.XML,
+    )
+
+    session_id = browser.driver.session_id
+
+    with allure.step('tear down app session with id: ' + session_id):
+        browser.quit()
 
     browser.quit()
 

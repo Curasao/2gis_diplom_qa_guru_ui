@@ -20,3 +20,10 @@
    <img src="https://camo.githubusercontent.com/3e715d68238077f084e084640eb79ea064e67fcb0f1a28c8b668a14edad02398/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d332e31312d626c75653f6c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465" />
    <img src="https://camo.githubusercontent.com/45142cc7af013644acd8a7cc81c1e53f1eab9493f2cb6a213eb70c66242c4935/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53656c656e652d322e302d6f72616e67653f6c6f676f3d73656c656e69756d266c6f676f436f6c6f723d7768697465">
 </p>
+Джоба Jenkins: https://jenkins.autotests.cloud/job/C21-Crunchy_fox-Diplom/
+
+Рекомендации для запуска проекта:
+
+1. Склонируйте проект к себе в репозиторий git clone 
+2. Включите виртуальное окружение python -m venv venv
+3. Установите зависимости pip install -r requirements.txt

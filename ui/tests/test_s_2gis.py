@@ -2,7 +2,9 @@ import allure
 from selene import browser, be, have, by, command
 from allure import step
 
-
+@allure.epic('Страница фильтра по объектам')
+@allure.feature('Проверка работы верхнего меню')
+@allure.suite('Верхнее меню на главной странице')
 class FilterPage:
     def open(self):
         browser.open('/ruza/')
@@ -68,7 +70,7 @@ class FormPage:
 
 
 
-@allure.feature("Фильтрация 2GIS")
+
 @allure.story("Поиск кофеен")
 @allure.title("Открыть страницу и выполнить поиск кофеен")
 def test_form_submission(setup_browser_filter):
@@ -79,14 +81,14 @@ def test_form_submission(setup_browser_filter):
         filter_page.rate_button()
         filter_page.price_button()
 
-@allure.feature("Фильтрация 2GIS")
+
 @allure.story("Поиск недвижимости")
 @allure.title("Поиск недвижимости по городу")
 def test_realty_search(setup_browser_realty):
     realty_page = Realty_Page()
     realty_page.realty_search("Тучково")
 
-@allure.feature("Фильтрация 2GIS")
+
 @allure.story("Поиск недвижимости")
 @allure.title("Открыть недвижимость и выставить фильтр цены")
 def test_realty_filters_price_and_rooms(setup_browser_realty):
@@ -94,7 +96,7 @@ def test_realty_filters_price_and_rooms(setup_browser_realty):
     realty_page.realty_open()
     realty_page.realty_price_button(4000000, 800000)
 
-@allure.feature("Форма пользователя 2GIS")
+
 @allure.story("Проверка номера телефона")
 @allure.title("Вход с корректным номером")
 def test_valid_login(setup_browser_form):
@@ -103,7 +105,7 @@ def test_valid_login(setup_browser_form):
     form_page.form_open()
     form_page.form_telephone('+7965555555')
 
-@allure.feature("Форма пользователя 2GIS")
+
 @allure.story("Проверка номера телефона")
 @allure.title("Вход с некорректным номером")
 def test_unvalid_login(setup_browser_form):
